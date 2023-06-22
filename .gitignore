@@ -38,3 +38,7 @@ next-env.d.ts
 .contentlayer
 .env
 .next
+# next.config.js
+next.config.js
+*.config.js
+next.config.js
