@@ -47,7 +47,7 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="https://www.sushantkogurwar.website" className="font-medium text-gray-400 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out">
+                <Link href="/contact" className="font-medium text-gray-400 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out">
                   Contact
                 </Link>
               </li>
