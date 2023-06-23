@@ -2,7 +2,8 @@ import React from 'react';
 import Header from '../components/ui/header';
 import Footer from '../components/ui/footer';
 import 'tailwindcss/tailwind.css';
-import styles from "../components/contact.module.css"
+import styles from "../components/contact.module.css";
+
 const Services = () => {
   return (
     <div className={styles.contact}>
@@ -14,12 +15,10 @@ const Services = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-white rounded-md shadow-md p-6">
             <h2 className="text-xl font-medium text-gray-800 mb-4">
-              Service 1
+              Coding Tutorial Sessions
             </h2>
             <p className="text-gray-600 mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              fringilla, nulla vel tincidunt pulvinar, orci neque mattis mauris,
-              sit amet tincidunt nulla dolor ac nunc.
+              Enhance your coding skills with our tutorial sessions. We offer one-on-one coding tutorials where our experienced instructors will guide you through various programming concepts and help you improve your problem-solving skills.
             </p>
             <a
               href="#"
@@ -30,12 +29,10 @@ const Services = () => {
           </div>
           <div className="bg-white rounded-md shadow-md p-6">
             <h2 className="text-xl font-medium text-gray-800 mb-4">
-              Service 2
+              Code Review and Feedback
             </h2>
             <p className="text-gray-600 mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              fringilla, nulla vel tincidunt pulvinar, orci neque mattis mauris,
-              sit amet tincidunt nulla dolor ac nunc.
+              Get valuable feedback on your code from our expert developers. We offer code review services where we thoroughly analyze your code, provide suggestions for improvement, and offer insights into best coding practices.
             </p>
             <a
               href="#"
@@ -46,12 +43,10 @@ const Services = () => {
           </div>
           <div className="bg-white rounded-md shadow-md p-6">
             <h2 className="text-xl font-medium text-gray-800 mb-4">
-              Service 3
+              Competitive Coding Training
             </h2>
             <p className="text-gray-600 mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              fringilla, nulla vel tincidunt pulvinar, orci neque mattis mauris,
-              sit amet tincidunt nulla dolor ac nunc.
+              Prepare for coding competitions and improve your algorithmic problem-solving skills. Our competitive coding training program covers various algorithms, data structures, and coding techniques to help you excel in competitive programming contests.
             </p>
             <a
               href="#"
@@ -62,12 +57,10 @@ const Services = () => {
           </div>
           <div className="bg-white rounded-md shadow-md p-6">
             <h2 className="text-xl font-medium text-gray-800 mb-4">
-              Service 4
+              Code Refactoring Services
             </h2>
             <p className="text-gray-600 mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              fringilla, nulla vel tincidunt pulvinar, orci neque mattis mauris,
-              sit amet tincidunt nulla dolor ac nunc.
+              Improve the quality and efficiency of your existing codebase with our code refactoring services. Our experienced developers will review your code, identify areas for improvement, and refactor the code to enhance readability, maintainability, and performance.
             </p>
             <a
               href="#"

@@ -2,3 +2,25 @@
     background-color: #1e1e28;
     color: #fff;
   }
+
+  .pageContainer {
+    background-color: #18171d;
+    color: #fff;
+    min-height: 100vh;
+  }
+  
+  .videoElement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .videoCard {
+    background-color: #18171d;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+  
+  /* Add more styles as needed */
+  

@@ -3,15 +3,16 @@ import 'tailwindcss/tailwind.css';
 import { getyvdos } from '../app/api/hello/getytvdos';
 import Header from '../components/ui/header';
 import Footer from '../components/ui/footer';
-import styles from "../components/contact.module.css"
+import styles from '../components/contact.module.css';
+
 type VideoBlockProps = {
   id: string;
 };
 
 const VideoElement = (props: VideoBlockProps): React.ReactElement => (
-  <div className="mx-5">
+  <div className={styles.videoElement}>
     <iframe
-      width="450"
+      width="380"
       height="280"
       src={`https://www.youtube.com/embed/${props.id}`}
       allow="autoplay; encrypted-media"
@@ -28,6 +29,7 @@ const Blog = (): React.ReactElement => {
     const fetchVideoData = async () => {
       try {
         const data = await getyvdos();
+        console.log('data', data);
         const videoIds = data.map((item: any) => item.contentDetails.videoId);
         setVideoData(videoIds);
       } catch (error) {
@@ -38,21 +40,21 @@ const Blog = (): React.ReactElement => {
   }, []);
 
   return (
-    <div className={styles.contact}>
-    <Header />
-    <div className="max-w-7xl mx-auto py-10   sm:px-6 lg:px-8">
-      <div className="py-10 my-10">
-        <h1 className="text-3xl font-bold mb-4">Video Tutorials</h1>
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          {videoData.map((videoId: string, index: number) => (
-            <div className="bg-white overflow-hidden shadow rounded-lg" key={videoId}>
-              <VideoElement key={index} id={videoId} />
-            </div>
-          ))}
+    <div className={styles.pageContainer}>
+      <Header />
+      <div className="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
+        <div className="py-10 my-10">
+          <h1 className="text-3xl font-bold mb-4">Video Tutorials</h1>
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
+            {videoData.map((videoId: string, index: number) => (
+              <div className={styles.videoCard} key={videoId}>
+                <VideoElement key={index} id={videoId} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
-    <Footer />
+      <Footer />
     </div>
   );
 };
